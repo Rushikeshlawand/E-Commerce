@@ -1,0 +1,170 @@
+/* Container Styling */
+.buy-product-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f3f4f7, #e2e4e8);
+    border-radius: 12px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .buy-product-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .buy-product-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Form Field Styling */
+  .buy-product-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .buy-product-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .buy-product-input,
+  .buy-product-select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-product-input:hover,
+  .buy-product-select:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .buy-product-input:focus,
+  .buy-product-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Floating Label Effect */
+  .buy-product-field input:not(:placeholder-shown) + label,
+  .buy-product-field select:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  /* Animations for Input Focus */
+  .buy-product-input,
+  .buy-product-select {
+    animation: fadeInUp 0.4s ease both;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Section Titles (e.g., Shipping Address) */
+  .buy-product-section-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Payment Method */
+  .buy-product-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .buy-product-radio-input {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .buy-product-radio-label {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Payment Method Hover Effect */
+  .buy-product-radio:hover .buy-product-radio-label {
+    color: #007bff;
+  }
+  
+  /* Submit Button */
+  .buy-product-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buy-product-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+  }
+  
+  .buy-product-submit:active {
+    transform: translateY(2px);
+  }
+  
+  /* Tooltip Styling */
+  .buy-product-tooltip {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .buy-product-input:hover + .buy-product-tooltip {
+    display: block;
+  }
+  

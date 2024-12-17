@@ -1,0 +1,26 @@
+.div5 {
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row; /* Evenly space items in the row */
+    align-items: center;            /* Vertically center the items */
+    margin-bottom: 20px;            /* Add some space below the list */
+  }
+  
+  .div5 .MuiListItem-root {
+    padding: 10px 20px;             /* Adjust spacing between items */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+  }
+  
+  .div5 .MuiListItem-root:hover {
+    background-color: #f39c12;      /* Highlight item on hover */
+    color: white;
+  }
+  p{
+    font-size: 1.2rem;
+    margin-left: 200px;
+  }
+  h2{
+    margin-left: 600px;
+    font-size: medium;
+  }
